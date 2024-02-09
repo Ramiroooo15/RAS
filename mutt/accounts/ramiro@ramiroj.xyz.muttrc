@@ -1,0 +1,19 @@
+# vim: filetype=neomuttrc
+# muttrc file for account ramiro@ramiroj.xyz
+set realname = "ramiro"
+set from = "ramiro@ramiroj.xyz"
+set sendmail = "msmtp -a ramiro@ramiroj.xyz"
+alias me ramiro <ramiro@ramiroj.xyz>
+set folder = "/home/tokyoluv/.local/share/mail/ramiro@ramiroj.xyz"
+set header_cache = "/home/tokyoluv/.cache/mutt-wizard/ramiro_ramiroj.xyz/headers"
+set message_cachedir = "/home/tokyoluv/.cache/mutt-wizard/ramiro_ramiroj.xyz/bodies"
+set mbox_type = Maildir
+set hostname = "ramiroj.xyz"
+source /usr/local/share/mutt-wizard/switch.muttrc
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set trash = "+Trash"
+set record = "+Sent"
+
+macro index o "<shell-escape>mailsync ramiro@ramiroj.xyz<enter>" "sync ramiro@ramiroj.xyz"
+mailboxes "=Archives/2024" "=Drafts" "=Junk" "=Sent" "=Trash" "=INBOX"

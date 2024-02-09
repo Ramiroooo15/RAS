@@ -1,0 +1,14 @@
+set editor = "nvim"
+set folder = "imaps://ramiro@ramiroj.xyz@mail.ramiroj.xyz:993"
+set spoolfile = "+INBOX"
+set smtp_url = "smtps://ramiro@ramiroj.xyz@mail.ramiroj.xyz:465"
+set realname = "Ramiro Jimenez"
+set from = "ramiro@ramiroj.xyz"
+mailboxes = =INBOX =Sent =Trash =Drafts =Junk
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+set smtp_pass = "7152"
+set imap_pass = "7152"
+source /usr/local/share/mutt-wizard/mutt-wizard.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/tokyoluv/.config/mutt/accounts/ramiro@ramiroj.xyz.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to ramiro@ramiroj.xyz"
