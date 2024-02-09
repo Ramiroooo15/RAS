@@ -12,7 +12,7 @@ NVIM_DIR="$HOME/.config/nvim/"
 FONT_DIR="$HOME/.local/share/fonts"
 ROFI_DIR="$HOME/.config/rofi"
 
-DIR="$HOME/RAS/conf/"
+DIR="$HOME/RAS/"
 
 ## messafe to user 
 echo "installing system"
